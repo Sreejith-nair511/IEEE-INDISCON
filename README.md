@@ -2,7 +2,7 @@
 
 This repository contains a complete, production-ready implementation of the IEEE research paper titled "Federated Learning-Based Distributed Anomaly Detection in Smart Infrastructure Networks". The implementation demonstrates federated learning for anomaly detection in smart infrastructure scenarios with non-IID data distribution across multiple clients.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 federated_anomaly/
@@ -204,14 +204,14 @@ The paper presents a novel approach for detecting anomalies in smart infrastruct
 
 4. **Reproducibility**: All experiments use fixed seeds. Results should be consistent across runs.
 
-## 📝 License
+## License
 
 This implementation is provided for research and educational purposes. Please cite the original IEEE paper if you use this code in your research.
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to submit issues and enhancement requests!
 
-## 📧 Contact
+## Contact
 
 For questions about this implementation, please refer to the original IEEE research paper or open an issue in the repository.
