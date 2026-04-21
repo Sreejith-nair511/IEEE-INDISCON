@@ -23,7 +23,7 @@ federated_anomaly/
 └── README.md               # This file
 ```
 
-## 🚀 Features
+## Features
 
 - **Federated Learning**: Uses Flower framework with FedAvg strategy
 - **Non-IID Data Distribution**: Realistic client data splitting with varying anomaly ratios
@@ -32,7 +32,7 @@ federated_anomaly/
 - **Visualization**: Generates publication-quality plots for results analysis
 - **Reproducible**: Fixed random seeds and deterministic training
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.8+
 - PyTorch
@@ -43,7 +43,7 @@ federated_anomaly/
 - pandas
 - tqdm
 
-## 🔧 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -63,7 +63,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install torch flwr scikit-learn matplotlib numpy pandas tqdm
 ```
 
-## 🏃‍♂️ How to Run
+## How to Run
 
 Execute the main experiment script:
 
@@ -80,7 +80,7 @@ This will automatically:
 6. Generate all visualization plots
 7. Save comprehensive metrics and benchmark report
 
-## 📊 Expected Outputs
+## Expected Outputs
 
 After running the experiments, you will find:
 
@@ -102,7 +102,7 @@ After running the experiments, you will find:
 - `local_client_{i}_metrics.csv` - Individual client results
 - `benchmark_report.txt` - Comprehensive benchmark comparison
 
-## ⚙️ Configuration
+## Configuration
 
 Key hyperparameters can be modified in `config.py`:
 
@@ -129,25 +129,25 @@ ANOMALY_RATIO = 0.2
 TEST_SPLIT = 0.2
 ```
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The AnomalyDetector is a feedforward neural network:
 - Input Layer → Linear(20, 64) → ReLU → Dropout(0.3)
 - Hidden Layer → Linear(64, 32) → ReLU → Dropout(0.2)
 - Output Layer → Linear(32, 1) → Sigmoid
 
-## 📈 Non-IID Data Distribution
+## Non-IID Data Distribution
 
 The implementation creates realistic non-IID data distribution:
 - **Client 0**: 80% normal samples, 20% anomalies
 - **Client 1**: 20% normal samples, 80% anomalies  
 - **Clients 2-4**: Mixed stratified distribution
 
-## 🎯 Performance Validation
+## Performance Validation
 
 The federated learning model is designed to achieve F1-score within 5% of the centralized baseline while providing privacy benefits and reduced communication overhead.
 
-## 📋 Benchmark Report
+## Benchmark Report
 
 The system generates a comprehensive benchmark report comparing:
 
@@ -160,14 +160,14 @@ The system generates a comprehensive benchmark report comparing:
 | Comm. Cost | N/A         | XX.XX MB  | N/A        |
 | Rounds     | N/A         | 20        | N/A        |
 
-## 🔬 Research Paper Reference
+## Research Paper Reference
 
 This implementation is based on the IEEE research paper:
 **"Federated Learning-Based Distributed Anomaly Detection in Smart Infrastructure Networks"**
 
 The paper presents a novel approach for detecting anomalies in smart infrastructure networks using federated learning, enabling privacy-preserving collaborative learning while maintaining high detection accuracy.
 
-## 🛠️ Key Components
+## Key Components
 
 ### Client Implementation (`client.py`)
 - FlowerClient class inheriting from `flwr.client.NumPyClient`
