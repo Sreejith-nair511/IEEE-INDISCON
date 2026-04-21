@@ -189,7 +189,7 @@ The paper presents a novel approach for detecting anomalies in smart infrastruct
 - Federated learning progress tracking
 - Performance comparison charts
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
