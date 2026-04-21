@@ -1,0 +1,2 @@
+accuracy,precision,recall,f1,test_loss,client_id,num_epochs,communication_cost_mb,num_rounds
+0.9444,0.8261,0.95,0.8837,0.3016,4,300,0.0,0

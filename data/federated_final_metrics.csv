@@ -1,0 +1,2 @@
+round,loss,accuracy,precision,recall,f1,communication_cost_mb,num_rounds
+30,0.2800534080815851,0.956,0.8514,0.945,0.8957,4.1484,30

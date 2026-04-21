@@ -1,0 +1,25 @@
+
+Federated Learning-Based Distributed Anomaly Detection - Benchmark Report
+Generated on: 2026-04-21 13:48:18
+
+         Metric Centralized Federated Local-Only
+       Accuracy      0.9450    0.9560     0.9603
+      Precision      0.8085    0.8514     0.9206
+         Recall      0.9500    0.9450     0.9300
+       F1 Score      0.8736    0.8957     0.9238
+Comm. Cost (MB)         N/A      4.15        N/A
+         Rounds         N/A        30        N/A
+
+Performance Analysis:
+- Federated F1-Score: 0.8957
+- Centralized F1-Score: 0.8736
+- Performance Difference: 2.53%
+
+Configuration:
+- Number of Clients: 5
+- Number of Rounds: 30
+- Local Epochs: 10
+- Batch Size: 32
+- Learning Rate: 0.0005
+- Data Samples: 5000
+- Anomaly Ratio: 0.2

@@ -1,0 +1,4 @@
+Method,Accuracy,Precision,Recall,F1-Score,Test_Loss,Communication_Cost_MB,Rounds
+Centralized,0.945,0.8085,0.95,0.8736,0.2134,0.0,0
+Federated,0.956,0.8514,0.945,0.8957,0.2801,4.1484,30
+Local-Only,0.9603,0.9206,0.93,0.9238,0.5097,0.0,0
